@@ -1,8 +1,12 @@
+import Content from "./components/views/Content";
+import Sidebar from "./components/views/Sidebar";
+
 function App() {
   return (
-    <>
-      <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
-    </>
+    <main className="flex">
+      <Sidebar />
+      <Content />
+    </main>
   );
 }
 
