@@ -4,7 +4,7 @@ import InputField from "../ui/InputField";
 export default function NewView({ inputTitleRef, inputDescriptionRef, inputDateRef, handleViewChange, handleSaveProject }) {
     return (
         <>
-            <div className='w-[400px] mt-8 flex flex-col gap-5'>
+            <div className='w-full lg:w-[400px] mt-8 flex flex-col gap-5'>
                 <InputField id="title" label="Title" ref={inputTitleRef} />
                 <InputField id="description" label="Description" ref={inputDescriptionRef} textarea rows="7" />
                 <InputField id="date" label="Due Date" type="date" ref={inputDateRef} />

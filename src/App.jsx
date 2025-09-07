@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <header className="bg-emerald-950 h-[50px]"></header>
-      <main className="flex h-[calc(100vh-50px)] bg-emerald-950 text-white text-[18px]">
+      <main className="flex h-[calc(100vh-50px)] bg-emerald-950 text-white text-[18px] max-md:flex-col">
         <Sidebar handleViewChange={handleViewChange} projects={projects} />
         <Content currentView={view} handleViewChange={handleViewChange} handleProjectAdd={handleProjectAdd} handleProjectRemove={handleProjectRemove} setProjects={setProjects} />
       </main>

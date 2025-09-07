@@ -53,7 +53,7 @@ export default function ProjectView({ project, handleProjectRemove, setProjects,
                 <p className="text-xs">{project.date}</p>
                 <p>{project.description}</p>
             </div>
-            <div className="max-w-[500px]">
+            <div className="lg:max-w-[500px]">
                 <h2 className="text-2xl font-bold mb-4">Tasks</h2>
                 <div className="flex gap-2">
                     <InputField id="new-task" ref={taskName} onKeyDown={handleKeyDown} />
